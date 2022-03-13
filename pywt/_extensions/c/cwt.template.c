@@ -118,7 +118,7 @@ void CAT(TYPE, _morl)(const TYPE * const restrict input, TYPE * const restrict o
     size_t i = 0;
     for (i = 0; i < N; i++)
     {
-        output[i] = CAT(TYPE, _cos)(5*input[i])*CAT(TYPE, _exp)(-CAT(TYPE, _pow)(input[i], 2.0)/2);
+        output[i] = CAT(TYPE, _cos)(input[i])*CAT(TYPE, _exp)(-CAT(TYPE, _pow)(1.3*input[i], 2.0)/2);
     }
 }
 
